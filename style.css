@@ -46,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ddd4c5;
     font-size: 17px;
     text-transform: uppercase;
     padding: 7px 13px;
@@ -55,7 +55,7 @@ nav ul li a {
 
 a.active,
 nav a:hover {
-    background: #da7669;
+    background: #7C3C2F;
     transition: .5s;
 }
 
