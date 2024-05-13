@@ -11,6 +11,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.tekst {
+    color: #D8D0C1;
+}
+
 /* Navbar */
 /*add navbar everywhere*/
 .navbar {
