@@ -7,13 +7,34 @@
     box-sizing: border-box;
 }
 
+:root {
+    --hue-nuetral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --hue: var(--hue-nuetral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    /*background-color: hsl(var(--hue), 100%, 20%);*/
 }
+
+
 
 .tekst {
     color: #D8D0C1;
 }
+
+
+
 
 /* Navbar */
 /*add navbar everywhere*/
@@ -72,22 +93,8 @@ nav a:hover {
     }
 }
 
-/* about me home-page */
-#homeAboutMeText {
-    margin: 7% 0 0 5%;
-    font-size: 30px;
-    width: 40%;
-    float: left;
-}
 
-/* template - page*/
-#hobbyText {
-    margin: 12% 0 0 5%;
-    font-size: 30px;
-    width: 40%;
-    float: left;
-}
-
+/*excess*/
 .videoGame {
     text-decoration: none;
     color: #da7669;
