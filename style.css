@@ -53,7 +53,6 @@ nav ul li a {
     color: #ddd4c5;
     font-size: 17px;
     text-transform: uppercase;
-    padding: 7px 13px;
     border-radius: 3px;
 }
 
@@ -76,7 +75,7 @@ nav a:hover {
 #homeAboutMeText {
     margin: 7% 0 0 5%;
     font-size: 30px;
-    width: 60%;
+    width: 70%;
     float: left;
 }
 
