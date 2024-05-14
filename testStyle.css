@@ -16,7 +16,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    --hue: var(--hue-nuetral);
+    /*--hue: var(--hue-nuetral);
     padding: 0;
     margin: 0;
     display: flex;
@@ -24,11 +24,31 @@ body {
     height: 100vw;
     justify-content: center;
     align-items: center;
-    /*background-color: hsl(var(--hue), 100%, 20%);*/
+    background-color: hsl(var(--hue), 100%, 20%);*/
 }
 
+body.correct {
+    --hue: var(--hue-correct)
+}
 
+body.wrong {
+    --hue: var(--hue-wrong)
+}
 
+.containerTest {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    margin: 7% 0 0 2%;
+}
+
+/*buttons*/
+.btn-grid {}
+
+/*tekst*/
 .tekst {
     color: #D8D0C1;
 }
