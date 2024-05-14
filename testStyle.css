@@ -7,12 +7,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --hue-nuetral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -27,14 +21,6 @@ body {
     background-color: hsl(var(--hue), 100%, 20%);*/
 }
 
-body.correct {
-    --hue: var(--hue-correct)
-}
-
-body.wrong {
-    --hue: var(--hue-wrong)
-}
-
 .containerTest {
     width: 800px;
     max-width: 80%;
@@ -46,7 +32,33 @@ body.wrong {
 }
 
 /*buttons*/
-.btn-grid {}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1px solid black;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: lightgray;
+    border-color: white;
+}
+
+.start-btn,
+.next-btn {
+    font-size: 1.5rem;
+    font-
+}
 
 /*tekst*/
 .tekst {
