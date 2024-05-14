@@ -4,39 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>mental health week project</title>
     <link rel="stylesheet" href="testStyle.css">
 </head>
 
 <body style="background-color:#003049">
     <!--navbar with links to different webpages-->
-
-    <nav>
-        <label class="name">Mental Health - how am i doing</label>
-        <ul>
-            <li><a href="./index.html">home</a></li>
-            <li><a href="./howAmIDoing.html" class="active">how am i doing</a></li>
-            <li><a href="./template.html">template</a></li>
-        </ul>
-    </nav>
-
-    <!--text about me on the aboutMe page-->
-    <div class="containerTest">
-        <div id="question-container" class="hide">
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
-        </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
-        </div>
+    <div class="navbar">
+        <nav>
+            <label class="name">Mental Health - how am i doing</label>
+            <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./howAmIDoing.html" class="active">how am i doing</a></li>
+                <li><a href="./template.html">template</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="score">
-        <span id="right-answers"></span>
+
+
+    <div id="quiz">
+        <h1>Interactive Quiz | By CodePicker</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit">Submit</button>
     </div>
 
 
