@@ -79,6 +79,14 @@ nav a:hover {
     float: left;
 }
 
+#homeTextBottom {
+    margin: 7% 0 0 5%;
+    font-size: 30px;
+    width: 70%;
+    float: left;
+    color: #D8D0C1;
+}
+
 /* template - page*/
 #hobbyText {
     margin: 12% 0 0 5%;
