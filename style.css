@@ -95,8 +95,15 @@ nav a:hover {
 
 /*  template */
 
-#satisfyinggif1{
-    margin: 12% -5% 0 0;
+#imgsat{
+    float: right;
+    margin: 5% 5% 0 0;
     width: 45%;
     height: auto;
 }
+
+#satisfyinggif1{
+    width: 100%;
+    height: auto;
+}
+
