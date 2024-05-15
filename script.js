@@ -20,9 +20,11 @@ const quizData = [
 
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
+const previousQuestionElement = document.getElementById("previous-question");
 
+const previousQuestionLabel = "previous question";
 let currentQuestion = 0;
-let score = 0;
+const score = new Array(quizData.length).fill(0);
 
 function showQuestion() {
     const question = quizData[currentQuestion];
@@ -35,30 +37,37 @@ function showQuestion() {
         optionsElement.appendChild(button);
         button.addEventListener("click", selectAnswer);
     });
+
+    previousQuestionElement.innerHTML = "";
+    if (currentQuestion > 0) {
+        const button = document.createElement("button");
+        button.innerText = previousQuestionLabel;
+        previousQuestionElement.appendChild(button);
+        button.addEventListener("click", selectAnswer);
+    }
 }
 
 function selectAnswer(e) {
     const selectedButton = e.target;
-    const answer1 = quizData[currentQuestion].answer1;
-    const answer2 = quizData[currentQuestion].answer2;
-    const answer3 = quizData[currentQuestion].answer3;
-    const answer4 = quizData[currentQuestion].answer4;
+    const question = quizData[currentQuestion];
 
-    if (selectedButton.innerText === answer1) {
-        score += 15;
+    if (selectedButton.innerText === previousQuestionLabel) {
+        currentQuestion--;
+        showQuestion();
+        return;
     }
-    if (selectedButton.innerText === answer2) {
-        score += 10;
-    }
-    if (selectedButton.innerText === answer3) {
-        score += 5;
-    }
-    if (selectedButton.innerText === answer4) {
-        score += 0;
+
+    if (selectedButton.innerText === question.answer1) {
+        score[currentQuestion] = 15;
+    } else if (selectedButton.innerText === question.answer2) {
+        score[currentQuestion] = 10;
+    } else if (selectedButton.innerText === question.answer3) {
+        score[currentQuestion] = 5;
+    } else if (selectedButton.innerText === question.answer4) {
+        score[currentQuestion] = 0;
     }
 
     currentQuestion++;
-
     if (currentQuestion < quizData.length) {
         showQuestion();
     } else {
@@ -67,9 +76,15 @@ function selectAnswer(e) {
 }
 
 function showResult() {
-    quiz.innerHTML = `
+    let finalScore = 0;
+
+    score.forEach((score) => {
+        finalScore += score;
+    });
+
+    document.getElementById('quiz').innerHTML = `
       <h1>Quiz Completed!</h1>
-      <p>Your score: ${score}/${quizData.length * 15}</p>
+      <p>Your score: ${finalScore}/${quizData.length * 15}</p>
     `;
 }
 

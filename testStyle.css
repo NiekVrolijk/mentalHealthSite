@@ -37,6 +37,18 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+#previous-question {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #D62828;
+    color: #D8D0C1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 button {
     display: block;
     margin: 0 auto;
