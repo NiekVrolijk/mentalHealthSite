@@ -53,6 +53,7 @@ nav ul li a {
     color: #ddd4c5;
     font-size: 17px;
     text-transform: uppercase;
+    padding: 7px 13px;
     border-radius: 3px;
 }
 
@@ -94,7 +95,7 @@ nav a:hover {
 
 /*  template */
 
-#satisfyinggif1{
+#satisfyinggif1 {
     margin: 12% -5% 0 0;
     width: 45%;
     height: auto;
