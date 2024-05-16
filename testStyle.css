@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia;
 }
 
 /*quiz*/
@@ -16,19 +16,20 @@ body {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #D62828;
+    background-color: #75977C;
     border-radius: 5px;
-    box-shadow: 0 0 10px #131313;
+    box-shadow: 0 0 10px #1E2952;
 }
 
 #titleText {
     text-align: center;
-    color: #D8D0C1;
+    color: #1E2952;
 }
 
 #question {
     margin-bottom: 20px;
-    color: #D8D0C1;
+    color: #1E2952;
+    text-align: center;
 }
 
 #options {
@@ -41,8 +42,8 @@ body {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
-    background-color: #D62828;
-    color: #D8D0C1;
+    background-color: #75977C;
+    color: #1E2952;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -53,20 +54,20 @@ button {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
-    background-color: #D62828;
-    color: #D8D0C1;
+    background-color: #75977C;
+    color: #1E2952;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #f77f00;
+    background-color: #4A6D7C;
 }
 
 /*tekst*/
 .tekst {
-    color: #D8D0C1;
+    color: #1E2952;
 }
 
 
@@ -76,10 +77,12 @@ button:hover {
 /*add navbar everywhere*/
 .navbar {
     margin: 0 0 80px 0;
+    height: 10%;
+    width: 100%;
 }
 
 nav {
-    background: #D62828;
+    background: #75977C;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -88,7 +91,7 @@ nav {
 }
 
 label.name {
-    color: #D8D0C1;
+    color: #1E2952;
     font-size: 35px;
     line-height: 80px;
     font-weight: bold;
@@ -107,7 +110,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ddd4c5;
+    color: #1E2952;
     font-size: 17px;
     text-transform: uppercase;
     padding: 7px 13px;
@@ -116,7 +119,7 @@ nav ul li a {
 
 a.active,
 nav a:hover {
-    background: #f77f00;
+    background: #4A6D7C;
     transition: .5s;
 }
 
@@ -127,11 +130,4 @@ nav a:hover {
         height: 100vh;
         left: -100%;
     }
-}
-
-
-/*excess*/
-.videoGame {
-    text-decoration: none;
-    color: #da7669;
 }
