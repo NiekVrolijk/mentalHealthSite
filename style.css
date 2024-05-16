@@ -111,3 +111,10 @@ nav a:hover {
     width: 100%;
     height: auto;
 }
+
+#satisfyingtext{
+    margin: -30% 0 0 5%;
+    font-size: 30px;
+    width: 70%;
+    float: left;
+}
