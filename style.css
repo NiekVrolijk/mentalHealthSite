@@ -15,6 +15,11 @@ body {
     color: #1E2952;
 }
 
+.bigTekst {
+    color: #1E2952;
+    margin: 1% 0 0 0;
+}
+
 /* Navbar */
 /*add navbar everywhere*/
 .navbar {
