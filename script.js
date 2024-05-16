@@ -128,7 +128,7 @@ function showResult() {
     } else {
         document.getElementById('quiz').innerHTML = `
         <h1>you are done with the test :)</h1>
-        <p>you feel ok maybe not always happy but also not always sad, ok enough<p>
+        <p>you feel ok, maybe not always happy but also not always sad, good enough<p>
         `
     }
     //<p>Your score: ${finalScore}/${quizData.length * 15}</p>
