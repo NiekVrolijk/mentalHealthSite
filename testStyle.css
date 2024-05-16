@@ -38,7 +38,6 @@ body {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    font-size: 25px;
 }
 
 #previous-question {
@@ -51,7 +50,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     grid-template-columns: repeat(2, 1fr);
-    font-size: 25px;
 }
 
 button {
@@ -63,6 +61,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 button:hover {
