@@ -15,6 +15,11 @@ body {
     color: #1E2952;
 }
 
+.bigTekst {
+    color: #1E2952;
+    margin: 1% 0 0 0;
+}
+
 /* Navbar */
 /*add navbar everywhere*/
 .navbar {
@@ -76,7 +81,7 @@ nav a:hover {
 
 /* about me home-page */
 #homeAboutMeText {
-    margin: 7% 0 0 5%;
+    margin: 3% 0 0 5%;
     font-size: 30px;
     width: 70%;
     float: left;
@@ -110,4 +115,11 @@ nav a:hover {
 #satisfyinggif1 {
     width: 100%;
     height: auto;
+}
+
+#satisfyingtext{
+    margin: -30% 0 0 5%;
+    font-size: 30px;
+    width: 70%;
+    float: left;
 }
