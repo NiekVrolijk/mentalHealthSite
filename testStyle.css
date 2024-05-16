@@ -24,18 +24,21 @@ body {
 #titleText {
     text-align: center;
     color: #1E2952;
+    font-size: 40px;
 }
 
 #question {
     margin-bottom: 20px;
     color: #1E2952;
     text-align: center;
+    font-size: 25px;
 }
 
 #options {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
+    font-size: 25px;
 }
 
 #previous-question {
@@ -48,6 +51,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     grid-template-columns: repeat(2, 1fr);
+    font-size: 25px;
 }
 
 button {
