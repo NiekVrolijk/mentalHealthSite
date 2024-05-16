@@ -14,7 +14,7 @@ body {
 /*quiz*/
 #quiz {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 10% auto 0 auto;
     padding: 20px;
     background-color: #75977C;
     border-radius: 5px;
